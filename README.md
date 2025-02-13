@@ -31,7 +31,7 @@ After installation, simply include the library in your project and call `scrollC
 #### Basic Example
 
 ```js
-import { scrollConcert } from "scroll-concert";
+import scrollConcert from "scroll-concert";
 
 // Sync one leader with a follower
 scrollConcert({

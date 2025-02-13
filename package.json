@@ -1,6 +1,6 @@
 {
   "name": "scroll-concert",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "author": "Alec Lloyd Probert",
   "type": "module",
   "private": false,
@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "./dist/scroll-concert.umd.cjs",
   "module": "./dist/scroll-concert.js",
-  "types": "dist/types/.d.ts",
+  "types": "./dist/scroll-concert.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vitest --run && tsc && vite build",
@@ -31,16 +31,10 @@
   },
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/types/scroll-concert.d.ts",
-        "default": "./dist/scroll-concert.js"
-      },
-      "default": {
-        "types": "./dist/types/scroll-concert.d.cts",
-        "default": "./dist/scroll-concert.cjs"
-      }
-    },
-    "./style.css": "./dist/style.css"
+      "types": "./dist/scroll-concert.d.ts",
+      "import": "./dist/scroll-concert.js",
+      "require": "./dist/scroll-concert.umd.cjs"
+    }
   },
   "devDependencies": {
     "jsdom": "^26.0.0",

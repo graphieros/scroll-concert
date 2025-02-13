@@ -8,3 +8,5 @@ export type ConcertParams = {
     leader: Leader
     follower: Follower | Follower[]
 }
+
+export declare function scrollConcert(params: ConcertParams): () => void;
