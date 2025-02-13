@@ -1,0 +1,52 @@
+{
+  "name": "scroll-concert",
+  "version": "0.1.0",
+  "author": "Alec Lloyd Probert",
+  "type": "module",
+  "private": false,
+  "description": "A TS library to automatically synchronize scroll events between DOM elements.",
+  "keywords": [
+    "scroll",
+    "sync",
+    "dom",
+    "javascript",
+    "types"
+  ],
+  "homepage": "https://scroll-concert.graphieros.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphieros/scroll-concert.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "main": "./dist/scroll-concert.umd.cjs",
+  "module": "./dist/scroll-concert.js",
+  "types": "dist/types/.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vitest --run && tsc && vite build",
+    "test": "vitest"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/types/scroll-concert.d.ts",
+        "default": "./dist/scroll-concert.js"
+      },
+      "default": {
+        "types": "./dist/types/scroll-concert.d.cts",
+        "default": "./dist/scroll-concert.cjs"
+      }
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vitest": "^3.0.5"
+  }
+}
