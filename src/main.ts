@@ -49,12 +49,19 @@ export function scrollConcert({
                 const followerWidth = followerEl.scrollWidth;
                 const followerClientWidth = followerEl.clientWidth;
 
+                // If the follower is not scrollable, adjust using transform instead of scrollTop/scrollLeft
                 if (followerHeight <= followerClientHeight || followerClientHeight === 0) {
-                    console.error('Invalid follower scrollHeight or clientHeight', { followerHeight, followerClientHeight });
+                    const speedRatio = followerElements[i].speedRatio ?? 1;
+                    const calculatedVerticalPosition = verticalScrollPosition * (followerHeight - followerClientHeight) * speedRatio;
+                    const calculatedHorizontalPosition = horizontalScrollPosition * (followerWidth - followerClientWidth) * speedRatio;
+
+                    followerEl.style.transform = `translateY(-${calculatedVerticalPosition}px) translateX(-${calculatedHorizontalPosition}px)`;
                     return;
                 }
 
                 const speedRatio = followerElements[i].speedRatio ?? 1;
+
+                // Apply parallax effect with speedRatio for scrollable followers
                 const calculatedVerticalScroll = verticalScrollPosition * (followerHeight - followerClientHeight) * speedRatio;
                 const calculatedHorizontalScroll = horizontalScrollPosition * (followerWidth - followerClientWidth) * speedRatio;
 

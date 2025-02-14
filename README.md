@@ -116,7 +116,7 @@ To run the tests locally:
    ```bash
    npm run test
    ```
-   You can also test manually with the index.html provided in the project.
+   You can also test manually with the index.html provided in the project, which has a simple parallax implementation.
 
 Scroll Concert uses [Vitest](https://vitest.dev/) for unit tests, to ensure the library works in various scenarios.
 

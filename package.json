@@ -1,6 +1,6 @@
 {
   "name": "scroll-concert",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "author": "Alec Lloyd Probert",
   "type": "module",
   "private": false,
@@ -12,7 +12,6 @@
     "javascript",
     "types"
   ],
-  "homepage": "https://scroll-concert.graphieros.com/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/graphieros/scroll-concert.git"

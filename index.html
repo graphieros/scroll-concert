@@ -8,60 +8,67 @@
     <style>
       /* Basic styling for scrollable elements */
       #leader, #leader2, #follower, #follower2 {
-        width: 200px;
-        height: 200px;
-        overflow: scroll;
-        border: 1px solid black;
-        margin: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100lvh;
+        overflow: auto;
+        margin: 1rem;
       }
 
       /* Adding large content for scrolling */
-      #contentLeader,#contentLeader2, #contentFollower, #contentFollower2 {
-        width: 1000px; /* Make the content wide enough to scroll horizontally */
-        height: 1000px; /* Make the content long enough to scroll vertically */
+      #contentLeader,#contentLeader2, #contentFollower {
+        height: 400lvh; /* Make the content long enough to scroll vertically */
+      }
+
+      #follower {
+        padding-left: 12rem;
+      }
+
+      h1 {
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <div id="leader">
-      <div id="contentLeader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, incidunt aspernatur tempora placeat cupiditate similique fugiat quaerat officiis laudantium exercitationem animi inventore accusantium rerum modi provident ad ab neque maiores sint mollitia sed? Possimus accusamus officiis nesciunt, a eum libero doloribus illo pariatur expedita! Alias sed natus cumque sit sapiente id eos numquam facilis aliquam, accusantium delectus saepe perspiciatis illo nisi earum totam. Labore ducimus rem nulla, id atque autem repellat, voluptate quia aut ex corporis perspiciatis obcaecati voluptates porro eaque eveniet eius asperiores quae? Laborum aperiam, error assumenda illo iusto perferendis est doloremque! Non animi eos, dolor ut accusamus id ipsa fugit, totam in sit itaque excepturi quae. Nostrum, illum quibusdam asperiores porro, eveniet a fuga nam earum impedit dolorum odio dolorem saepe, dignissimos eius placeat! Vitae mollitia sapiente deserunt dolore illo, aspernatur culpa suscipit quam aliquid excepturi? Et nam ab accusamus nostrum explicabo vero numquam repudiandae repellendus similique, nesciunt dicta distinctio voluptates in possimus officia unde reprehenderit a sint quam quidem iste odit eius optio asperiores. Voluptatibus dolor consequuntur neque repudiandae debitis quasi praesentium, corporis vel quisquam doloremque, at, eveniet inventore corrupti suscipit. Quibusdam corrupti iure ipsa aut enim obcaecati delectus nisi et nulla aperiam. Earum aliquid, magnam quo minus quibusdam autem similique recusandae eum impedit, sunt necessitatibus asperiores labore veritatis numquam blanditiis? Magnam voluptates est labore quidem facere obcaecati a voluptatem atque aut sed totam iure fugit natus expedita repudiandae saepe non eius maiores velit, suscipit aliquam excepturi alias at! Illum cum beatae dolorem doloremque placeat inventore ea veritatis quod eligendi totam dolor unde modi nobis, tempore ullam tempora reiciendis asperiores assumenda laudantium sit voluptatibus impedit? Officiis eveniet excepturi veniam, repellendus tenetur consequatur nemo nihil aspernatur rem iure placeat neque sapiente ut rerum quo adipisci laudantium, earum fugiat natus ab modi illo. Officiis laudantium similique, autem asperiores obcaecati consectetur quidem et fuga harum dolorem quae unde necessitatibus inventore enim aperiam ea temporibus quibusdam maiores saepe accusamus possimus voluptates beatae tenetur nulla? Ratione quibusdam nobis asperiores facilis debitis. Aliquam, neque? Tempore reprehenderit impedit qui, vitae totam iusto quidem dignissimos voluptate beatae maxime dolor aspernatur. Sequi exercitationem reprehenderit hic temporibus officia nisi harum quo maiores magnam consequatur placeat quisquam velit est delectus, ipsum amet similique nostrum quam, voluptatum commodi dignissimos quasi possimus! Ad quam aut ex temporibus debitis suscipit vitae, laborum aperiam ut iste expedita eaque rem. Dolor aliquam error, totam molestiae veritatis rerum tempora voluptatibus tempore deleniti magni.</div>
-    </div>
-    <div id="leader2">
-      <div id="contentLeader2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, incidunt aspernatur tempora placeat cupiditate similique fugiat quaerat officiis laudantium exercitationem animi inventore accusantium rerum modi provident ad ab neque maiores sint mollitia sed? Possimus accusamus officiis nesciunt, a eum libero doloribus illo pariatur expedita! Alias sed natus cumque sit sapiente id eos numquam facilis aliquam, accusantium delectus saepe perspiciatis illo nisi earum totam. Labore ducimus rem nulla, id atque autem repellat, voluptate quia aut ex corporis perspiciatis obcaecati voluptates porro eaque eveniet eius asperiores quae? Laborum aperiam, error assumenda illo iusto perferendis est doloremque! Non animi eos, dolor ut accusamus id ipsa fugit, totam in sit itaque excepturi quae. Nostrum, illum quibusdam asperiores porro, eveniet a fuga nam earum impedit dolorum odio dolorem saepe, dignissimos eius placeat! Vitae mollitia sapiente deserunt dolore illo, aspernatur culpa suscipit quam aliquid excepturi? Et nam ab accusamus nostrum explicabo vero numquam repudiandae repellendus similique, nesciunt dicta distinctio voluptates in possimus officia unde reprehenderit a sint quam quidem iste odit eius optio asperiores. Voluptatibus dolor consequuntur neque repudiandae debitis quasi praesentium, corporis vel quisquam doloremque, at, eveniet inventore corrupti suscipit. Quibusdam corrupti iure ipsa aut enim obcaecati delectus nisi et nulla aperiam. Earum aliquid, magnam quo minus quibusdam autem similique recusandae eum impedit, sunt necessitatibus asperiores labore veritatis numquam blanditiis? Magnam voluptates est labore quidem facere obcaecati a voluptatem atque aut sed totam iure fugit natus expedita repudiandae saepe non eius maiores velit, suscipit aliquam excepturi alias at! Illum cum beatae dolorem doloremque placeat inventore ea veritatis quod eligendi totam dolor unde modi nobis, tempore ullam tempora reiciendis asperiores assumenda laudantium sit voluptatibus impedit? Officiis eveniet excepturi veniam, repellendus tenetur consequatur nemo nihil aspernatur rem iure placeat neque sapiente ut rerum quo adipisci laudantium, earum fugiat natus ab modi illo. Officiis laudantium similique, autem asperiores obcaecati consectetur quidem et fuga harum dolorem quae unde necessitatibus inventore enim aperiam ea temporibus quibusdam maiores saepe accusamus possimus voluptates beatae tenetur nulla? Ratione quibusdam nobis asperiores facilis debitis. Aliquam, neque? Tempore reprehenderit impedit qui, vitae totam iusto quidem dignissimos voluptate beatae maxime dolor aspernatur. Sequi exercitationem reprehenderit hic temporibus officia nisi harum quo maiores magnam consequatur placeat quisquam velit est delectus, ipsum amet similique nostrum quam, voluptatum commodi dignissimos quasi possimus! Ad quam aut ex temporibus debitis suscipit vitae, laborum aperiam ut iste expedita eaque rem. Dolor aliquam error, totam molestiae veritatis rerum tempora voluptatibus tempore deleniti magni.</div>
-    </div>
     <div id="follower">
-      <div id="contentFollower">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptatibus nisi adipisci perferendis quam, suscipit numquam quo ratione, eveniet odit neque possimus eos nam labore ut quas minima aspernatur rem. Tempore cum quam quibusdam, voluptas possimus ratione eum corporis mollitia nulla perferendis suscipit. Maxime eaque voluptatem odit alias. Nemo reiciendis possimus, consequuntur dolor autem vel rem fugiat, suscipit necessitatibus dolore fuga. Ad vel quisquam reprehenderit possimus explicabo, dicta qui magni, sequi quo corrupti at nemo eius debitis provident. Consectetur, tempora. Fugit laborum soluta, eos molestias ea saepe sapiente, sunt totam ratione reprehenderit, laudantium dolores obcaecati nisi nobis molestiae impedit consectetur magnam. Rerum, similique, ratione perferendis a facilis expedita iure quae ut totam eveniet soluta, maxime et ab sunt dicta illo excepturi accusamus culpa. Quas temporibus tenetur dicta mollitia, velit esse laborum facilis. Necessitatibus voluptatum totam laboriosam ipsam molestiae incidunt, esse obcaecati! Nemo impedit voluptatum, veritatis fugit distinctio eaque illum reiciendis harum nihil quasi explicabo, possimus sed? Dignissimos repellat tempora optio explicabo ipsa? Quaerat aliquam dolores voluptates! Libero, sed facere dolorem maiores rem sint consequatur aperiam optio numquam fuga vero doloremque nemo tenetur quos. Id, ipsa excepturi odit deserunt a officiis magni quasi sapiente asperiores iusto obcaecati? Ut fugit ullam aspernatur voluptas molestiae quidem accusamus amet ad autem quod sequi praesentium ipsa laborum enim eligendi, aut nostrum aperiam quae ipsam quo hic itaque minima repellat soluta? Velit eaque nam labore ipsa sint aliquam adipisci tempora qui magnam ipsum recusandae ab repudiandae quibusdam nulla animi obcaecati assumenda veritatis, eum aliquid consequatur soluta eligendi? Quibusdam eveniet optio provident tempora, dignissimos fuga rem, doloremque consectetur in harum aliquid vero at qui suscipit sunt totam! Dolore sit sint non consequuntur voluptas dolores perferendis quod, unde repellendus atque obcaecati, nemo totam amet delectus ex quis laboriosam fugiat quam earum incidunt alias, laudantium molestias placeat quo. Illo quam maiores sed esse aperiam dolor assumenda, deleniti qui eveniet fugiat natus mollitia inventore dolore blanditiis iste repellat tenetur saepe! Dignissimos ratione cupiditate earum rerum aspernatur. Voluptatibus expedita officia et blanditiis rem temporibus repudiandae consequatur deserunt similique dolor debitis sint, vitae eos necessitatibus quas commodi fugit, facilis consequuntur aut cum maiores. Veniam est dolor expedita molestiae esse quia distinctio animi. Doloremque quo et nihil dolorem quos illo dolores est soluta eius atque, voluptatum rem expedita, facere quod sunt placeat tenetur fugit accusamus iure qui veniam ipsam eum molestiae dolor. Eum mollitia voluptas delectus at? Distinctio recusandae deleniti voluptates exercitationem corrupti.</div>
+      <div id="contentFollower">
+        <h2>Follower</h2>
+        <div style="height: 100%; width: calc(100% - 12rem); position: relative">
+          <h1>Simple parallax effect using scroll-concert</h1>
+          <img style="width:100%" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/24701-nature-natural-beauty.jpg"/>
+        </div>
+      </div>
     </div>
-    <div id="follower2">
-      <div id="contentFollower2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate voluptatibus nisi adipisci perferendis quam, suscipit numquam quo ratione, eveniet odit neque possimus eos nam labore ut quas minima aspernatur rem. Tempore cum quam quibusdam, voluptas possimus ratione eum corporis mollitia nulla perferendis suscipit. Maxime eaque voluptatem odit alias. Nemo reiciendis possimus, consequuntur dolor autem vel rem fugiat, suscipit necessitatibus dolore fuga. Ad vel quisquam reprehenderit possimus explicabo, dicta qui magni, sequi quo corrupti at nemo eius debitis provident. Consectetur, tempora. Fugit laborum soluta, eos molestias ea saepe sapiente, sunt totam ratione reprehenderit, laudantium dolores obcaecati nisi nobis molestiae impedit consectetur magnam. Rerum, similique, ratione perferendis a facilis expedita iure quae ut totam eveniet soluta, maxime et ab sunt dicta illo excepturi accusamus culpa. Quas temporibus tenetur dicta mollitia, velit esse laborum facilis. Necessitatibus voluptatum totam laboriosam ipsam molestiae incidunt, esse obcaecati! Nemo impedit voluptatum, veritatis fugit distinctio eaque illum reiciendis harum nihil quasi explicabo, possimus sed? Dignissimos repellat tempora optio explicabo ipsa? Quaerat aliquam dolores voluptates! Libero, sed facere dolorem maiores rem sint consequatur aperiam optio numquam fuga vero doloremque nemo tenetur quos. Id, ipsa excepturi odit deserunt a officiis magni quasi sapiente asperiores iusto obcaecati? Ut fugit ullam aspernatur voluptas molestiae quidem accusamus amet ad autem quod sequi praesentium ipsa laborum enim eligendi, aut nostrum aperiam quae ipsam quo hic itaque minima repellat soluta? Velit eaque nam labore ipsa sint aliquam adipisci tempora qui magnam ipsum recusandae ab repudiandae quibusdam nulla animi obcaecati assumenda veritatis, eum aliquid consequatur soluta eligendi? Quibusdam eveniet optio provident tempora, dignissimos fuga rem, doloremque consectetur in harum aliquid vero at qui suscipit sunt totam! Dolore sit sint non consequuntur voluptas dolores perferendis quod, unde repellendus atque obcaecati, nemo totam amet delectus ex quis laboriosam fugiat quam earum incidunt alias, laudantium molestias placeat quo. Illo quam maiores sed esse aperiam dolor assumenda, deleniti qui eveniet fugiat natus mollitia inventore dolore blanditiis iste repellat tenetur saepe! Dignissimos ratione cupiditate earum rerum aspernatur. Voluptatibus expedita officia et blanditiis rem temporibus repudiandae consequatur deserunt similique dolor debitis sint, vitae eos necessitatibus quas commodi fugit, facilis consequuntur aut cum maiores. Veniam est dolor expedita molestiae esse quia distinctio animi. Doloremque quo et nihil dolorem quos illo dolores est soluta eius atque, voluptatum rem expedita, facere quod sunt placeat tenetur fugit accusamus iure qui veniam ipsam eum molestiae dolor. Eum mollitia voluptas delectus at? Distinctio recusandae deleniti voluptates exercitationem corrupti.</div>
+    
+    <div id="leader">
+      <div id="contentLeader">
+        <h2>Leader</h2>
+        <div style="height: 100%; width: 500px; background: #FFFFFFAA">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Peace_Of_Nature_%28129019177%29.jpeg" style="width: 100%"/>
+          <p>Scroll down: the follower scrolls slower than the leader</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Peace_Of_Nature_%28129019177%29.jpeg" style="width: 100%"/>
+        </div>
+      </div>
     </div>
-
+    
     <script type="module">
       import { scrollConcert } from '/dist/scroll-concert.js';
 
       const leaderEl = '#leader';
-      const leaderEl2 = '#leader2';
       const followerEl = '#follower';
       const followerEl2 = '#follower2';
 
       const cancelScrollSync = scrollConcert({
-        leader: [leaderEl, leaderEl2],
+        leader: [leaderEl],
         follower: [
-          { selector: followerEl, speedRatio: 1.5},
-          { selector: followerEl2, speedRatio: 2},
+          { selector: followerEl, speedRatio: 0.3},
         ],
-        options: {
-          speedRatio: 1
-        }
       });
-
-      // setTimeout(() => {
-      //   const leaderElement = document.querySelector(leaderEl);
-      //   if (leaderElement) {
-      //     leaderElement.scrollTop = 50;
-      //     leaderElement.dispatchEvent(new Event('scroll'));
-      //   }
-      // }, 2000);
     </script>
   </body>
 </html>
